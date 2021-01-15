@@ -7,10 +7,15 @@
 @color-default: #fff;
 @color-hover: #0056b3;
 @color-select: #dd2f31;
+@color-footer: #222;
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.position{
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 
@@ -18,16 +23,22 @@
 *, *::after, *::before {padding: 0;margin: 0;box-sizing: border-box;}
 
 body {
-    width: 1920px; 
     background-color: white;
     font-family: 'Poppins', sans-serif !important;
 };
+
+ul {
+    list-style: none !important;
+}
+a {
+    text-decoration: none !important;
+}
 
 
 // ..........................style for header................................
 .header {
     height: 100px;
-    padding: 23px @padding-left 0 @padding-right;
+    padding-top: 23px;
     background-color: rgba(0, 0, 0, 0.6);
     // ....................style for navigation bar..........................
     ul {
@@ -73,7 +84,9 @@ body {
     z-index: -1;
     height: 950px;
     background-image: url("../imgs/slider_01.jpg");
-    padding: 0 @padding-left 0 @padding-right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     &-contents {
         color: @color-default;
         padding-top: 300px;
@@ -110,7 +123,7 @@ body {
 // ...........................style for catergory product.....................................
 
 .category-product {
-    margin: 0 405px 0 405px;
+    .position;
     position: relative;
     top: -180px;
     height: 500px;
@@ -155,7 +168,7 @@ body {
 .product {
     position: relative;
     top: -80px;
-    padding: 0 @padding-left 0 @padding-right;
+    .position;
     &__tab-bar {
         width: 100%;
         border-bottom: 1px solid lightgray;
@@ -297,6 +310,139 @@ body {
         &:hover &--cart,&:hover &--views, &:hover &--like,&:hover &--exchange{
             display: flex;
         }
+    }
+}
+
+// .............................style for client say......................................
+.client-say{
+    .position;
+    margin-bottom: 100px;
+    text-align: center;
+    overflow: hidden;
+    &__title{
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    &__slider{
+        position: relative;
+        width: 300%;
+        display: flex;
+        &--content{
+            width: 100%;
+            &-image{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+            &-comment{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 18px;
+                line-height: 2;
+                margin-bottom: 30px;
+            }
+            &-author{
+                margin-bottom: 40px;
+                h3{
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__select{
+        display: flex;
+        width: 60px;
+        margin: 0 auto;
+        justify-content: space-between;
+        &-1{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+    }
+}
+// ...........................style for brand..........................
+.brand {
+    height: 150px;
+    border-top: 1px solid lightgray;
+    .position;
+    padding: 40px 0;
+}
+// ...........................style for footer.........................
+.footer{
+    background-color: @color-footer;
+    text-align: center;
+    &__about {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        color: gray;
+        border-bottom: 1px solid gray;
+
+        &--icon {
+            padding-bottom: 40px;
+        }
+        &--intro {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.8;
+            padding-bottom: 20px;
+        }
+        &--contact{
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            &-facebook, &-twitter, &-google, &-youtube{
+                width: 20%;
+                font-size: 18px;
+                a {
+                    color: gray;
+                }
+            }
+        }
+    }
+    &__navigation{
+        padding-top: 80px;
+        text-align: left;
+        h3 {
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            padding-bottom: 25px;
+        }
+        ul {
+            li {
+                font-size: 14px;
+                padding-bottom: 15px;
+
+                a{
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+// ........................style for copyright........................
+.copyright {
+    color: gray;
+    background-color: black;
+    font-size: 14px;
+    p {
+        text-align: center;
+        padding-top: 20px;
     }
 }
 
