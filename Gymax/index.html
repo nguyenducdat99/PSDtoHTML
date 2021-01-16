@@ -29,86 +29,90 @@
 <body>
     <!-- Open Header -->
     <div class="header">
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <!-- div logo -->
-                <div class="col-xl-3">
-                    <img src="./imgs/logo_03.png" alt="gymax logo">
+                <div class="col-xl-2 remove-padding">
+                    <div class="header__logo">
+                        <img src="./imgs/logo_03.png" alt="gymax logo">
+                    </div>
                 </div>
 
                 <!-- div navigation -->
-                <div class="col-xl-7">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">Classes</a>    
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                    </ul>
+                <div class="col-xl-8 remove-padding">
+                    <div class="header__nav">
+                        <ul class="nav">
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Classes</a>    
+                            </li>
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item header__nav--modify">
+                                <a class="nav-link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- div utilities -->
-                <div class="col-xl-2 utilities">
-                    <div class="utilities-icon"><a href="#"><i class="fa fa-search " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
-                    <div class="utilities-icon"><a href="#"><i class="fa fa-shopping-cart " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
-                    <div class="utilities-icon"><a href="#"><i class="fa fa-user " aria-hidden="true"></i></a></div>
+                <div class="col-xl-2">
+                    <div class="header__utilities">
+                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-search " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
+                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-shopping-cart " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
+                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-user " aria-hidden="true"></i></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Close Header -->
 
-    <!-- Open Slider -->
-    <div class="slider">
-        <div class="container">
+    <!-- Open banner -->
+    <div class="banner">
+        <div class="container remove-padding">
             <div class="row">
-                <!-- div slider contents -->
-                <div class="col-xl-5">
-                    <div class="slider-contents">
-                        <h1>Dumbbellsshop</h1>
+                <!-- div banner contents -->
+                <div class="col-xl-6">
+                    <div class="banner__contents">
+                        <h1>Dumbbells Shop</h1>
                         <h3>Best body fitness</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Magnam beatae ab distinctio iusto voluptas nesciunt cumque suscipit ea?
                             Deleniti laudantium blanditiis modi minima dicta quos atque suscipit rerum voluptates facere.
                         </p>
-                        <div class="slider-contents__button">
+                        <div class="banner__contents__button">
                             <a href="#">Shop now</a>
                             
                         </div>
                     </div>
                 </div>
 
-                <!-- div empty -->
-                <div class="col-xl-2"></div>
-
-                <!-- div slider image  -->
-                <div class="col-xl-5"></div>
+                <!-- div banner image  -->
+                <div class="col-xl-6"></div>
             </div>
         </div>
     </div>
-    <!-- Close Slider -->
+    <!-- Close banner -->
+
     <!-- Open Category Product -->
     <div class="category-product">
                     <!-- div for dumbbell -->
                     <div class="category-product__group">
                         <div class="category-product__group--up">
-                            <img src="./imgs/dumbbells_03.jpg" class="category-product__group--image"  alt="Dumbbells">
+                            <img src="./imgs/dumbbells.jpg" class="category-product__group--image"  alt="Dumbbells">
                         </div>
                         <div class="category-product__group--down">
-                            <img src="./imgs/dumbbell-icon_10.png" class="category-product__group--icon" alt="Dumbblel icon">
+                            <img src="./imgs/dumbbells-icon.png" class="category-product__group--icon" alt="Dumbblel icon">
                             <h4>Dumbbells</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, quia itaque aliquam</p>
                         </div>
@@ -117,19 +121,19 @@
                     <!-- div for strength -->
                     <div class="category-product__group">
                         <div class="category-product__group--down">
-                            <img src="./imgs/strength-icon_06.png" class="category-product__group--icon" alt="Dumbblel icon">
+                            <img src="./imgs/strength-icon.png" class="category-product__group--icon" alt="Dumbblel icon">
                             <h4>Strength</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, quia itaque aliquam </p>
                         </div>
                         <div class="category-product__group--up">
-                            <img src="./imgs/Strength_03.jpg" class="category-product__group--image"  alt="Dumbbells">
+                            <img src="./imgs/power-rack.jpg" class="category-product__group--image"  alt="Dumbbells">
                         </div>
                     </div>
 
                     <!-- div for power rack -->
                     <div class="category-product__group">
                         <div class="category-product__group--up">
-                            <img src="./imgs/Power-rack_03.jpg" class="category-product__group--image"  alt="Dumbbells">
+                            <img src="./imgs/Strength_03.jpg" class="category-product__group--image"  alt="Dumbbells">
                         </div>
                         <div class="category-product__group--down">
                             <img src="./imgs/power-rack-icon_07.png" class="category-product__group--icon" alt="Dumbblel icon">
@@ -145,7 +149,7 @@
         <div class="container">
             <!-- div for tab bar  -->
             <div class="row">
-                <ul class="nav product__tab-bar">
+                <ul class="nav product__tab-bar remove-margin">
                     <li class="nav-item product__tab-bar--select">
                         <h3>Top Sellers</h3>
                     </li>
@@ -164,23 +168,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img1_03.jpg" alt="product 1">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Body champ Cardio</p>
                                 <p><b>$342.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -190,23 +194,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img2.jpg" alt="product 2">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Body Solid GCEC340</p>
                                 <p><b>$214.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -216,23 +220,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img3.jpg" alt="product 3">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Bowflex BXE116 Elliptical</p>
                                 <p><b>$412.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -242,23 +246,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img4.jpg" alt="product 4">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>ETHOS GHD</p>
                                 <p><b>$152.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -270,23 +274,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img5.jpg" alt="product 5">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>AFG Pro 7.2AI Incline</p>
                                 <p><b>$252.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -296,23 +300,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img6.jpg" alt="product 6">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Weight Bench</p>
                                 <p><b>$412.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -322,23 +326,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img7.jpg" alt="product 7">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Proform Hiit Trainer Lite 5.9</p>
                                 <p><b>$300.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -348,23 +352,23 @@
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
-                            <div class="product__sub-product--image">
+                            <div class="product__sub-product__image">
                                 <img src="./imgs/img8.jpg" alt="product 8">
                             </div>
-                            <div class="product__sub-product--title">                          
+                            <div class="product__sub-product__title">                          
                                 <p>Fitness Gear Pro</p>
                                 <p><b>$124.00</b></p>
                             </div>
-                            <div class="product__sub-product--cart">
+                            <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--views">
+                            <div class="product__sub-product__views">
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--like">
+                            <div class="product__sub-product__like">
                                 <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product--exchange">
+                            <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
                         </a>
@@ -384,38 +388,38 @@
                     <h1>See What They Said About Us</h1>
                 </div>
                 <div class="client-say__slider" id='slider'>
-                        <div class="client-say__slider--content" >
-                            <div class="client-say__slider--content-image">
+                        <div class="client-say__slider__contents" >
+                            <div class="client-say__slider__contents__image">
                                 <img src="./imgs/client-say-image.jpg" alt="Client say image">
                             </div>
-                            <div class="client-say__slider--content-comment">
+                            <div class="client-say__slider__contents__comment">
                                 <q>Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me</q>
                             </div>
-                            <div class="client-say__slider--content-author">
+                            <div class="client-say__slider__contents__author">
                                 <h3>Lina</h3>
                                 <p>Happy clients</p>
                             </div>
                         </div>
-                        <div class="client-say__slider--content" >
-                            <div class="client-say__slider--content-image">
+                        <div class="client-say__slider__contents" >
+                            <div class="client-say__slider__contents__image">
                                 <img src="./imgs/client-say-image.jpg" alt="Client say image">
                             </div>
-                            <div class="client-say__slider--content-comment">
+                            <div class="client-say__slider__contents__comment">
                                 <q>Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me</q>
                             </div>
-                            <div class="client-say__slider--content-author">
+                            <div class="client-say__slider__contents__author">
                                 <h3>Susan</h3>
                                 <p>Happy clients</p>
                             </div>
                         </div>
-                        <div class="client-say__slider--content" >
-                            <div class="client-say__slider--content-image">
+                        <div class="client-say__slider__contents" >
+                            <div class="client-say__slider__contents__image">
                                 <img src="./imgs/client-say-image.jpg" alt="Client say image">
                             </div>
-                            <div class="client-say__slider--content-comment">
+                            <div class="client-say__slider__contents__comment">
                                 <q>Good services. I bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me</q>
                             </div>
-                            <div class="client-say__slider--content-author">
+                            <div class="client-say__slider__contents__author">
                                 <h3>John</h3>
                                 <p>Happy clients</p>
                             </div>
@@ -475,27 +479,27 @@
 
     <!-- open footer -->
     <div class="footer">
-        <div class="container">
+        <div class="container  remove-padding">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="footer__about">
-                        <div class="footer__about--icon">
+                        <div class="footer__about__icon">
                             <img src="./imgs/logo_03.png">
                         </div>
-                        <div class="footer__about--intro">
+                        <div class="footer__about__intro">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum culpa reprehenderit sunt omnis? Dignissimos placeat perferendis error, tempore nisi, ex officia id distinctio corporis veniam, hic quam ducimus? Alias, culpa.</p>
                         </div>
-                        <div class="footer__about--contact">
-                            <div class="footer__about--contact-facebook">
+                        <div class="footer__about__contact">
+                            <div class="footer__about__contact--facebook">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </div>
-                            <div class="footer__about--contact-twitter">
+                            <div class="footer__about__contact--twitter">
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </div>
-                            <div class="footer__about--contact-google">
+                            <div class="footer__about__contact--google">
                                 <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="footer__about--contact-youtube">
+                            <div class="footer__about__contact--youtube">
                                 <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                             </div>
                         </div>
@@ -584,7 +588,7 @@
                         </ul>
                    </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 remove-padding">
                    <div class="footer__navigation">
                         <h3>Quick Link</h3>
                         <ul>
