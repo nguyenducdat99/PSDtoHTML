@@ -186,12 +186,10 @@ a {
 .product {
     position: relative;
     top: -80px;
-    .position;
-
+    
     // ........................style for top bar product....................................
     &__tab-bar {
         width: 100%;
-        border-bottom: 1px solid lightgray;
         margin-left: 15px;
         margin-right: 15px;
         &--select{
@@ -208,7 +206,7 @@ a {
         &--select::after{
             content: '';
             position: absolute;
-            bottom: -1px;
+            bottom: -11px;
             left: 0;
             height: 3px;
             width: 100%;
@@ -342,11 +340,13 @@ a {
 
 // .............................style for client say......................................
 .client-say{
-    .position;
     margin-bottom: 100px;
     margin-top: 25px;
     text-align: center;
     overflow: hidden;
+    .container {
+        overflow: hidden;
+    }
     &__title{
         margin-bottom: 50px;
         h1 {
@@ -404,10 +404,15 @@ a {
 }
 // ...........................style for brand..........................
 .brand {
+    .position;
     height: 150px;
     border-top: 1px solid lightgray;
-    .position;
     padding: 40px 0;
+    &__one-brand{
+        width: 16.6%;
+        display: flex;
+        justify-content: center;
+    }
 }
 // ...........................style for footer.........................
 .footer{
@@ -519,7 +524,7 @@ a {
                 }
             }
     }
-    // .............................style for slider......................................
+    // .............................style for banner......................................
     .banner {
         height: 950px;
 
@@ -541,14 +546,7 @@ a {
             &__button{
                 width: 170px;
                 height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid @color-default;
-                text-transform: uppercase;
-                a {
-                    color: @color-default;
-                }
+                font-size: 14px;
             }  
     
         }
@@ -558,31 +556,80 @@ a {
         &__group{
             &--down{
                 h4{
-                    margin-top: 25px;
+                    margin-top: 30px;
+                    margin-left: 4px;
                 }
                 p {
                     margin-top: 20px;
+                    line-height: 1.8;
                 }
             }
-            &--icon{
-                
+            &--icon{             
             }
         }
     }
     // ................................style for product.................................
     .product {
+        &__tab-bar{
+            border: none;
+            &--select{
+                padding-left: 19px;
+            }
+            
+        }
+
+        
         &__sub-product{
-            height: 340px;
+            height: 329px;
+            margin-top: 50px;
+            margin-right: 21px;
             &__title{
                 padding: 15px;
-                padding-top: 20px;
-                padding-left: 10px;
+                padding-top: 24px;
+                padding-left: 20px;
                 p {
                     margin-bottom: 0;
                 }
             }
         }
     }
+    // ......................style for client say .........................
+    .client-say {
+        margin-top: 15px;
+        &__slider
+        {
+            &__contents{
+                &__image{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    // .............................style for footer ........................
+    .footer{
+        &__about{
+            padding-bottom: 52px;
+        }
+        &__navigation{
+            padding-top: 75px;
+            padding-bottom: 10px;
+            h3{
+                letter-spacing: 1.8px;
+            }
+            ul{
+                li{
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+    // .................style for copyright.................
+    .copyright{
+        p{
+            padding-top: 15px;
+        }
+    }
+    
 }
 
 
