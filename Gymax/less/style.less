@@ -76,13 +76,13 @@ a {
     // ...................style for utilities(search, cart, account)..................................
     &__utilities {
         display: flex;
- 
+        justify-content: space-around;
         align-items: center;
         color: @color-default;
 
         // ..................style for a utility....................................
         &__icon {
-            width: 33.3%;
+            width: 33%;
             display: flex;
             justify-content: center;
             a {
@@ -408,10 +408,11 @@ a {
     height: 150px;
     border-top: 1px solid lightgray;
     padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
     &__one-brand{
         width: 16.6%;
-        display: flex;
-        justify-content: center;
+        .flex-center;
     }
 }
 // ...........................style for footer.........................
@@ -485,6 +486,44 @@ a {
 }
 
 //  ........................perfect pixel.............................
+@media screen and (max-width: 640px){
+    .header {
+        &__logo{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .category-product{
+        &__group{
+            &--icon{
+                margin-top: 15px;
+            }
+            &--down{
+                h4{
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .product{
+        &__sub-product{
+            &__title{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .brand{
+        &__one-brand{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
 @media screen and (min-width: 1901px){
     .container {
         max-width: 1170px !important;
@@ -508,8 +547,8 @@ a {
         }
             // ...................style for utilities..................................
             &__utilities {
-                padding-left: 20px;
-                padding-right: 0;
+                padding: 18px 0 0 0;
+
                 &__icon {
                     width: 33%;
                     display: flex;
@@ -563,8 +602,6 @@ a {
                     margin-top: 20px;
                     line-height: 1.8;
                 }
-            }
-            &--icon{             
             }
         }
     }
