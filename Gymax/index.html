@@ -6,21 +6,7 @@
     <!-- Link to less file -->
     <link rel="stylesheet/less" type="text/css" href="./less/style.less" />
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Link to fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="type/javascript" src="./plugins/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
 
     <!-- title pagepage -->
     <title>Gymax home</title>
@@ -68,8 +54,8 @@
                 <div class="col-sm-3 col-md-2">
                     <div class="header__utilities">
                         <div class="header__utilities__icon"><a href="#"><i class="fa fa-search " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
-                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-shopping-cart " aria-hidden="true"></i></a></div>&nbsp;|&nbsp;
-                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-user " aria-hidden="true"></i></a></div>
+                        <div class="header__utilities__icon"><a href="#"><i class="fa fa-shopping-cart " aria-hidden="true"></i></a></div>&nbsp;&nbsp;|&nbsp;
+                        <div class="header__utilities__icon header__utilities__icon--right"><a href="#"><i class="fa fa-user " aria-hidden="true"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -92,7 +78,6 @@
                         </p>
                         <div class="banner__contents__button">
                             <a href="#">Shop now</a>
-                            
                         </div>
                     </div>
                 </div>
@@ -164,17 +149,120 @@
 
             <!-- div for product -->
             <div class="row">
-                <div class="col-md-3 ">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img1_03.jpg" alt="product 1">
+                <div class="col-md-12 remove-padding">
+                    <!-- div for list product -->
+                    <div class="product__list-product">
+                        <!-- div for single product -->
+                        <div class="product__sub-product">
+                            <a href="#">
+                                <div class="product__sub-product__image">
+                                    <img src="./imgs/img1_03.jpg" alt="product 1">
+                                </div>
+                                <div class="product__sub-product__title">                          
+                                    <p>Body champ Cardio</p>
+                                    <p><b>$342.00</b></p>
+                                </div>
+                            </a>
+                            <div class="product__sub-product__cart">
+                                <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
-                            <div class="product__sub-product__title">                          
-                                <p>Body champ Cardio</p>
-                                <p><b>$342.00</b></p>
+                            <div class="product__sub-product__views">
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                             </div>
+                            <div class="product__sub-product__like">
+                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__exchange">
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                            </div>
+                            
+                        </div>
+                        <!-- div for single product -->
+                        <div class="product__sub-product">
+                            <a href="#">
+                                <div class="product__sub-product__image">
+                                    <img src="./imgs/img2.jpg" alt="product 2">
+                                </div>
+                                <div class="product__sub-product__title">                          
+                                    <p>Body Solid GCEC340</p>
+                                    <p><b>$214.00</b></p>
+                                </div>
+                            </a>
+                            <div class="product__sub-product__cart">
+                                <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__views">
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__like">
+                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__exchange">
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="product__sub-product">
+                            <a href="#">
+                                <div class="product__sub-product__image">
+                                    <img src="./imgs/img3.jpg" alt="product 3">
+                                </div>
+                                <div class="product__sub-product__title">                          
+                                    <p>Bowflex BXE116 Elliptical</p>
+                                    <p><b>$412.00</b></p>
+                                </div>
+                            </a>
+                            <div class="product__sub-product__cart">
+                                <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__views">
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__like">
+                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__exchange">
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                            </div>
+                            
+                        </div>
+                        
+                         <!-- div for single product -->
+                        <div class="product__sub-product">
+                            <a href="#">
+                                <div class="product__sub-product__image">
+                                    <img src="./imgs/img4.jpg" alt="product 4">
+                                </div>
+                                <div class="product__sub-product__title">                          
+                                    <p>ETHOS GHD</p>
+                                    <p><b>$152.00</b></p>
+                                </div>
+                            </a>
+                            <div class="product__sub-product__cart">
+                                <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__views">
+                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__like">
+                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="product__sub-product__exchange">
+                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                            </div>
+                            
+                        </div>
+						<!-- div for single product -->
+						<div class="product__sub-product">
+							<a href="#">
+								<div class="product__sub-product__image">
+									<img src="./imgs/img5.jpg" alt="product 5">
+								</div>
+								<div class="product__sub-product__title">                          
+									<p>AFG Pro 7.2AI Incline</p>
+									<p><b>$252.00</b></p>
+                                </div>
+                            </a>
                             <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
@@ -187,20 +275,19 @@
                             <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img2.jpg" alt="product 2">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>Body Solid GCEC340</p>
-                                <p><b>$214.00</b></p>
-                            </div>
+							
+						</div>
+						<!-- div for single product -->
+						<div class="product__sub-product">
+							<a href="#">
+								<div class="product__sub-product__image">
+									<img src="./imgs/img6.jpg" alt="product 6">
+								</div>
+								<div class="product__sub-product__title">                          
+									<p>Weight Bench</p>
+									<p><b>$412.00</b></p>
+                                </div>
+                            </a>
                             <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
@@ -213,116 +300,8 @@
                             <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img3.jpg" alt="product 3">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>Bowflex BXE116 Elliptical</p>
-                                <p><b>$412.00</b></p>
-                            </div>
-                            <div class="product__sub-product__cart">
-                                <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__views">
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__like">
-                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__exchange">
-                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img4.jpg" alt="product 4">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>ETHOS GHD</p>
-                                <p><b>$152.00</b></p>
-                            </div>
-                            <div class="product__sub-product__cart">
-                                <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__views">
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__like">
-                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__exchange">
-                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img5.jpg" alt="product 5">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>AFG Pro 7.2AI Incline</p>
-                                <p><b>$252.00</b></p>
-                            </div>
-                            <div class="product__sub-product__cart">
-                                <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__views">
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__like">
-                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__exchange">
-                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img6.jpg" alt="product 6">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>Weight Bench</p>
-                                <p><b>$412.00</b></p>
-                            </div>
-                            <div class="product__sub-product__cart">
-                                <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__views">
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__like">
-                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__exchange">
-                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
+							
+						</div>
                     <!-- div for single product -->
                     <div class="product__sub-product">
                         <a href="#">
@@ -333,6 +312,32 @@
                                 <p>Proform Hiit Trainer Lite 5.9</p>
                                 <p><b>$300.00</b></p>
                             </div>
+                        </a>
+                        <div class="product__sub-product__cart">
+                            <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="product__sub-product__views">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="product__sub-product__like">
+                            <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="product__sub-product__exchange">
+                            <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                        </div>
+                        
+                    </div>
+						<!-- div for single product -->
+						<div class="product__sub-product">
+							<a href="#">
+								<div class="product__sub-product__image">
+									<img src="./imgs/img8.jpg" alt="product 8">
+								</div>
+								<div class="product__sub-product__title">                          
+									<p>Fitness Gear Pro</p>
+									<p><b>$124.00</b></p>
+                                </div>
+                            </a>
                             <div class="product__sub-product__cart">
                                 <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                             </div>
@@ -345,37 +350,13 @@
                             <div class="product__sub-product__exchange">
                                 <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <!-- div for single product -->
-                    <div class="product__sub-product">
-                        <a href="#">
-                            <div class="product__sub-product__image">
-                                <img src="./imgs/img8.jpg" alt="product 8">
-                            </div>
-                            <div class="product__sub-product__title">                          
-                                <p>Fitness Gear Pro</p>
-                                <p><b>$124.00</b></p>
-                            </div>
-                            <div class="product__sub-product__cart">
-                                <a href="#" ><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__views">
-                                <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__like">
-                                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="product__sub-product__exchange">
-                                <a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+							
+						</div>
 
+
+                    </div>
+                </div>  
+            </div>
         </div>
     </div>
     <!-- close product -->
@@ -388,7 +369,7 @@
                     <div class="client-say__title">
                         <h1>See What They Said About Us</h1>
                     </div>
-                    <div class="client-say__slider" id='slider'>
+                    <div class="client-say__slider">
                             <div class="client-say__slider__contents" >
                                 <div class="client-say__slider__contents__image">
                                     <img src="./imgs/client-say-image.jpg" alt="Client say image">
@@ -429,9 +410,9 @@
                     </div>
                     <!-- div for select slide -->
                     <div class="client-say__select">
-                        <div class="client-say__select-1" id="select-1" onclick="btn1()"></div>
-                        <div class="client-say__select-1" id="select-2" onclick="btn2()"></div>
-                        <div class="client-say__select-1" id="select-3" onclick="btn3()"></div>
+                        <div class="client-say__select-1" onclick="btn1(1)"></div>
+                        <div class="client-say__select-1" onclick="btn2(2)"></div>
+                        <div class="client-say__select-1" onclick="btn3(3)"></div>
                     </div>
     
                 </div>
@@ -444,23 +425,27 @@
     <div class="brand">
         <div class="container">
             <div class="row">
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand1.png" alt="brand symbol">
-                </div>
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand2.png" alt="brand symbol">
-                </div>
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand6.png" alt="brand symbol">
-                </div>
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand5.png" alt="brand symbol">
-                </div>
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand3.png" alt="brand symbol">
-                </div>
-                <div class="brand__one-brand">
-                    <img src="./imgs/brand4.png" alt="brand symbol">
+                <div class="col-md-12">
+                    <div class="brand__list-brand">
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand1.png" alt="brand symbol"></a>
+                        </div>
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand2.png" alt="brand symbol"></a>
+                        </div>
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand6.png" alt="brand symbol"></a>
+                        </div>
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand5.png" alt="brand symbol"></a>
+                        </div>
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand3.png" alt="brand symbol"></a>
+                        </div>
+                        <div class="brand__one-brand">
+                            <a href="#"><img src="./imgs/brand4.png" alt="brand symbol"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -474,7 +459,7 @@
                 <div class="col-md-12">
                     <div class="footer__about">
                         <div class="footer__about__icon">
-                            <img src="./imgs/logo_03.png">
+                            <img src="./imgs/logo_03.png" alt="logo">
                         </div>
                         <div class="footer__about__intro">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum culpa reprehenderit sunt omnis? Dignissimos placeat perferendis error, tempore nisi, ex officia id distinctio corporis veniam, hic quam ducimus? Alias, culpa.</p>
@@ -503,22 +488,22 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp 200 Lincoln Ave, Salinas, CA 92901</p>
+                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;200 Lincoln Ave, Salinas, CA 92901</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp 023 32423 223</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;023 32423 223</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp gymax@example.com</p>
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;gymax@example.com</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp 9:00 - 20:00 All day</p>
+                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp;9:00 - 20:00 All day</p>
                                 </a>
                             </li>
                         </ul>
@@ -615,7 +600,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
+                    <p>Copyright &copy; 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
                 </div>
             </div>
         </div>
@@ -623,6 +608,6 @@
     <!-- close copyright  -->
 
     <!-- Link to Javascript file -->
-    <script  src="./js/gymax.js"></script>
+    <script type="text/javascript"  src="./js/gymax.js"></script>
 </body>
 </html>

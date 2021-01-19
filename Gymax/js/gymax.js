@@ -1,38 +1,53 @@
-// run for slider
-var frameSize = document.getElementById('slider').clientWidth;
-let select1 = document.getElementById('select-1');
-select1.style.backgroundColor = "red";
+//  .............................import file.....................
 
-var btn1 = () => {
-    let frame = document.getElementById('slider');
-    let select1 = document.getElementById('select-1');
-    let select2 = document.getElementById('select-2');
-    let select3 = document.getElementById('select-3');
+//  .............................default seting............................
+document.getElementsByClassName("client-say__slider__contents")[0].style.display = "block";
+document.getElementsByClassName("client-say__select-1")[0].style.backgroundColor = "red";
 
-    frame.style.marginLeft = 0 + "px";
-    select1.style.backgroundColor = "#dd2f31";
-    select2.style.backgroundColor = "gray";
-    select3.style.backgroundColor = "gray";
+// ..............................code for slide click..................................
+
+var index = 0;
+var btn1 = (n) =>{
+    showSlice(n);
+    index = n - 1;
+    
 }
-var btn2 = () => {
-    let frame = document.getElementById('slider');
-    let select1 = document.getElementById('select-1');
-    let select2 = document.getElementById('select-2');
-    let select3 = document.getElementById('select-3');
-
-    frame.style.marginLeft = "-" + (frameSize/3) + "px";
-    select1.style.backgroundColor = "gray";
-    select2.style.backgroundColor = "#dd2f31";
-    select3.style.backgroundColor = "gray";
+var btn2 = (n) =>{
+    showSlice(n);
+    index = n - 1;
 }
-var btn3 = () => {
-    let frame = document.getElementById('slider');
-    let select1 = document.getElementById('select-1');
-    let select2 = document.getElementById('select-2');
-    let select3 = document.getElementById('select-3');
+var btn3 = (n) =>{
+    showSlice(n);
+    index = n - 1;
+}
+var showSlice = (n) =>{
+    var contents = document.getElementsByClassName("client-say__slider__contents");
+    var dot = document.getElementsByClassName("client-say__select-1");
 
-    frame.style.marginLeft = "-" + 2*(frameSize/3) + "px";
-    select1.style.backgroundColor = "gray ";
-    select2.style.backgroundColor = "gray";
-    select3.style.backgroundColor = "#dd2f31";
+    for(let i=0;i<contents.length;i++){
+        contents[i].style.display = "none";
+    }
+    for(let i=0;i<dot.length;i++){
+        dot[i].style.backgroundColor = "gray";
+    }
+    contents[n-1].style.display = "block";
+    dot[n-1].style.backgroundColor = "red";
+}
+
+// ..........................code for auto slider.....................
+setInterval(autoSlide, 2000);
+function autoSlide() {
+    var contents = document.getElementsByClassName("client-say__slider__contents");
+    var dot = document.getElementsByClassName("client-say__select-1");
+
+    for(let i=0;i<contents.length;i++){
+        contents[i].style.display = "none";
+    }
+    for(let i=0;i<dot.length;i++){
+        dot[i].style.backgroundColor = "gray";
+    }
+    if(index > contents.length-1){index = 0};
+    contents[index].style.display = "block";
+    dot[index].style.backgroundColor = "red";
+    index++;
 }

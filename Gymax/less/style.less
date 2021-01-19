@@ -1,5 +1,7 @@
 // ..........................import file....................................
 @import "../Css/font.css";
+@import "../plugins/bootstrap-4.0.0-dist/css/bootstrap.css";
+@import "../plugins/font-awesome-4.7.0/css/font-awesome.css";
 
 // ..........................declare variable..............................
 @padding-left: 360px;
@@ -45,10 +47,12 @@ a {
 
 // ..........................style for header................................
 .header {
-    height: 100px;
+    max-height: 100px;
     padding-top: 23px;
+    padding-bottom: 25px;
     background-color: rgba(0, 0, 0, 0.6);
-    
+    position: relative;
+    z-index: 999;
     // .......................style for logo.......................
     &__logo{
         img {
@@ -72,6 +76,10 @@ a {
             }
         }
     }
+    // ........................style for nav.............................
+    &__nav{
+        margin-top: 4px;
+    }
 
     // ...................style for utilities(search, cart, account)..................................
     &__utilities {
@@ -79,7 +87,7 @@ a {
         justify-content: space-around;
         align-items: center;
         color: @color-default;
-
+        padding-top: 10px;
         // ..................style for a utility....................................
         &__icon {
             width: 33%;
@@ -99,7 +107,6 @@ a {
 .banner {
     position: relative;
     top: -100px;
-    z-index: -1;
     height: 750px;
     background-image: url("../imgs/banner.jpg");
     background-repeat: no-repeat;
@@ -125,6 +132,7 @@ a {
         }
         // ........................style for button shop...............................
         &__button{
+            z-index: 1;
             width: 170px;
             height: 50px;
             .flex-center;
@@ -146,6 +154,7 @@ a {
     height: 500px;
     display: flex;
     background-color: @color-default;
+    max-width: 1140px;
     // .........................style for one category product.................................
     &__group{
         width: 33.3%;
@@ -222,9 +231,17 @@ a {
     }
 
     // ...............................style for a product............................
+    &__list-product{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: -15px;
+        padding-right: -15px;
+    }
     &__sub-product {
         position: relative;
-        box-sizing: border-box;;
+        box-sizing: border-box;
+        width: 269px;
         height: 330px;
         margin-top: 40px;
         border: 1px solid rgba(128, 128, 128, 0); 
@@ -354,13 +371,18 @@ a {
             font-weight: 700;
         }
     }
-    
     &__slider{
         position: relative;
-        width: 300%;
-        display: flex;
+        height: 285px;
         &__contents{
             width: 100%;
+            position: absolute;
+            z-index: -999;
+            top: 0;
+            left: 0;
+            display: none;
+            animation: fade;
+            animation-duration: 1.2s;
             &__image{
                 width: 80px;
                 height: 80px;
@@ -388,6 +410,14 @@ a {
                 }
             }
         }
+        @keyframes fade {
+            from{
+                opacity: 0.4;
+            }
+            to{
+                opacity: 1;
+            }
+        }
     }
     &__select{
         display: flex;
@@ -408,10 +438,14 @@ a {
     height: 150px;
     border-top: 1px solid lightgray;
     padding: 40px 0;
-    display: flex;
-    justify-content: space-around;
+    &__list-brand{
+        padding-left: -15px;
+        padding-right: -15px;
+        display: flex;
+        justify-content: space-between;
+    }
     &__one-brand{
-        width: 16.6%;
+        width: 7vw;
         .flex-center;
     }
 }
@@ -429,10 +463,10 @@ a {
             padding-bottom: 35px;
         }
         &__intro {
-            width: 70%;
+            width: 67%;
             margin: 0 auto;
             font-size: 14px;
-            line-height: 1.8;
+            line-height: 1.75;
             padding-bottom: 20px;
         }
         &__contact{
@@ -531,6 +565,9 @@ a {
     // .......................style for header..........................
     .header {
         // .......................style for logo.......................
+        .container{
+            padding-right: 0 !important;
+        }
         &__logo{
             img {
                 width: 100%;
@@ -539,8 +576,7 @@ a {
 
         &__nav{
             height: 100%;
-            padding-top: 5px;
-            padding-left: 79px;
+            padding-left: 76px;
             &--modify{
                 margin-right: 20px;
             }
@@ -553,12 +589,14 @@ a {
                     width: 33%;
                     display: flex;
                     justify-content: center;
-                    padding: 0 15px;
                     a {
                         color: @color-default;
                     }
                     a:hover {
                         color: @color-hover;
+                    }
+                    &--right{
+                        justify-content: flex-end;
                     }
                 }
             }
@@ -592,6 +630,7 @@ a {
     }
     // .............................style for category-product.........................
     .category-product {
+        max-width: 1170px;
         &__group{
             &--down{
                 h4{
@@ -614,16 +653,13 @@ a {
             }
             
         }
-
-        
         &__sub-product{
             height: 329px;
             margin-top: 50px;
-            margin-right: 21px;
             &__title{
                 padding: 15px;
                 padding-top: 24px;
-                padding-left: 20px;
+                padding-left: 26px;
                 p {
                     margin-bottom: 0;
                 }
