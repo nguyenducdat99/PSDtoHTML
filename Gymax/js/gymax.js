@@ -44,10 +44,10 @@ function autoSlide() {
         contents[i].style.display = "none";
     }
     for(let i=0;i<dot.length;i++){
-        dot[i].style.backgroundColor = "gray";
+        dot[i].style.backgroundColor = "#cccccc";
     }
     if(index > contents.length-1){index = 0};
     contents[index].style.display = "block";
-    dot[index].style.backgroundColor = "red";
+    dot[index].style.backgroundColor = "#dd2f31";
     index++;
 }
